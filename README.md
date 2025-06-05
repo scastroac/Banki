@@ -17,3 +17,31 @@ Paleta de colores: verde vibrante (verde naturaleza), café bosque, blanco, beig
 - Blanco: #FFFFFF
 - Beige: #f5f5dc
 - Acento: #ffc721
+
+    --------------------------------------------------------------
+    Estructura de proyecto:
+    --------------------------------------------------------------
+    BANKI/
+    ├── assets/
+    │   ├── img/            # Imágenes para la interfaz gráfica (logos, íconos)
+    │   ├── others/         # Recursos extra
+    │   └── sql/            # Scripts SQL 
+    │       └── init_db.sql
+    ├── src/
+    │   └── main/
+    │      └── java/
+    │          └── banki/  # Paquete principal
+    │              ├── model/
+    │              │   ├── Account.java
+    │              │   ├── Transaction.java    
+    │              │   └── TransactionType.java
+    │              ├── util/
+    │              │   └── AccountList.java
+    │              │   └── TransactionQueue.java
+    │              ├── database/  Conector de DB
+    │              │   └── DatabaseManager.java
+    │              └── Main.java
+    │   
+    │     
+    ├── lib/                # Dependencias externas (JDBC driver, etc.)
+    └── README.md
